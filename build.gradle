@@ -26,11 +26,13 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.hibernate.validator:hibernate-validator")
     compile("org.apache.tomcat.embed:tomcat-embed-el")
     testCompile("org.springframework.boot:spring-boot-starter-test")
+    runtime("com.h2database:h2")
 }
 
